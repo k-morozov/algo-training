@@ -1,4 +1,4 @@
-package ru.acm;
+package ru.acm.SummaDigit;
 
 import org.junit.jupiter.api.Test;
 

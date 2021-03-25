@@ -1,4 +1,4 @@
-package ru.acm;
+package ru.acm.SummaDigit;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
