@@ -56,8 +56,8 @@ class FinderTest {
     public void TestandLarge1() {
         long left = 1000;
         long right = 100000000000l;
-//        long result = finder.getCountInterestNumbers(left, right);
-//        long expected = 99999971585l;
-//        assertEquals(result, expected);
+        long result = finder.getCountInterestNumbers(left, right);
+        long expected = 99999971585l;
+        assertEquals(result, expected);
     }
 }
