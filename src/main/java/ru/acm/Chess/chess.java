@@ -38,12 +38,12 @@ class Pair {
 
 class Foo {
     private int[][] data;
-    private int size;
-    private char[] letters = {'a','b','c','d','e','f','g','h','i','j','k'};
+    private final int size;
+    private final char[] letters = {'a','b','c','d','e','f','g','h','i','j','k'};
     private int countFlag;
     private ArrayList<Pair> resultPos;
     private int[][] chessboard;
-    private Pair[] direction = {
+    private final Pair[] direction = {
             new Pair (2,1),
             new Pair (-2,1),
             new Pair (2,-1),
