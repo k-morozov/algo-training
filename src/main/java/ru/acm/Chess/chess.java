@@ -9,8 +9,8 @@ import java.util.Scanner;
 
 public class chess {
     public static void main(String[] args) {
-//        Stream stream = new Stream();
-        Scanner stream = new Scanner(System.in);
+        Stream stream = new Stream();
+//        Scanner stream = new Scanner(System.in);
         int size = stream.nextInt();
 
         Foo foo = new Foo(size);
@@ -19,7 +19,7 @@ public class chess {
 
         if(result) {
 //            System.out.println("POSSIBLE");
-            foo.print();
+            foo.print(stream);
         } else {
             System.out.println("IMPOSSIBLE");
         }
@@ -50,9 +50,11 @@ class Foo {
         resultPos = new ArrayList<>();
     }
 
-    public void print() {
+    public void print(Stream stream) {
         for (Pair pos: resultPos) {
-            System.out.println(letters[pos.let] + "" + (pos.dig+1));
+//            System.out.println(letters[pos.let] + "" + (pos.dig+1));
+            stream.getOut().println(letters[pos.let] + "" + (pos.dig+1));
+            stream.getOut().flush();
         }
     }
 
